@@ -1,12 +1,12 @@
-# Basic Level - Weeks 1-6: Django Fundamentals
+# Basic Level - Weeks 1-8: Django Fundamentals
 
 Welcome to your Django learning journey! 🎉
 
-This folder contains detailed, beginner-friendly guides for your first six weeks of learning Django. Each step is explained in simple terms, as if you're learning for the first time, with line-by-line explanations and Windows-specific commands.
+This folder contains detailed, beginner-friendly guides for your first eight weeks of learning Django. Each step is explained in simple terms, as if you're learning for the first time, with line-by-line explanations and Windows-specific commands.
 
 ## 📚 What You'll Learn
 
-In these first six weeks, you'll learn:
+In these first eight weeks, you'll learn:
 
 **Weeks 1-2: Introduction & Setup**
 1. **What Django is and why we use it** - Understanding the basics
@@ -22,6 +22,10 @@ In these first six weeks, you'll learn:
 7. **URL Routing** - Connecting URLs to pages
 8. **Views** - The logic that handles requests
 9. **Templates** - Creating beautiful HTML pages
+
+**Weeks 7-8: Forms & Complete App**
+10. **Django Forms** - Creating and handling forms
+11. **Building a Complete App** - CRUD operations and integration
 
 ## 📖 Step-by-Step Guides
 
@@ -99,6 +103,24 @@ Follow these guides in order:
    - Static files (CSS, JS, images)
    - Template context
 
+### Weeks 7-8: Forms & Complete App
+
+10. [Step 10: Django Forms](./step-10-django-forms.md)
+    - Creating forms
+    - Form fields and widgets
+    - Form validation
+    - Rendering forms in templates
+    - Handling form submissions
+    - ModelForms
+    - **Windows commands included!**
+
+11. [Step 11: Building a Complete App](./step-11-building-complete-app.md)
+    - Create a complete blog application
+    - CRUD operations (Create, Read, Update, Delete)
+    - Integrating all concepts learned
+    - Building a working Django application from scratch
+    - **Step-by-step project walkthrough!**
+
 ## 🎯 Learning Tips
 
 - **Take your time**: Don't rush! Understanding the basics is important
@@ -137,6 +159,14 @@ Before moving to the intermediate level, make sure you can:
 - [ ] Use template tags and filters
 - [ ] Load and use static files
 
+### Weeks 7-8
+- [ ] Create Django forms
+- [ ] Validate form data
+- [ ] Use ModelForms
+- [ ] Build a complete CRUD application
+- [ ] Integrate models, views, URLs, templates, and forms
+- [ ] Understand how all Django pieces work together
+
 ## 🚀 Ready to Start?
 
 Begin with [Step 1: Understanding Django](./step-1-understanding-django.md)
@@ -155,10 +185,13 @@ All commands in these guides are written for **Windows PowerShell** or **Command
 
 ## 🎓 What's Next?
 
-After completing all 9 steps, you'll be ready for:
-- Intermediate level topics (Forms, Authentication, APIs)
-- Building complete projects
+After completing all 11 steps, you'll be ready for:
+- Intermediate level topics (Authentication, APIs, Advanced Forms)
+- Building more complex projects
 - Advanced Django features
 - Deployment
+- Django REST Framework
+
+**Congratulations!** You've completed the basic level and built a complete Django application! 🎉
 
 Good luck! You've got this! 💪
