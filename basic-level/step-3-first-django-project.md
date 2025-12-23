@@ -82,6 +82,96 @@ myfirstproject/              ← Your project folder
 
 **🎉 Congratulations!** You just created your first Django project!
 
+### Step 4: Open Project in Visual Studio Code
+
+**Now let's open your project in VS Code to work with it!**
+
+**Method 1: From Command Line (Easiest)**
+```powershell
+# Make sure you're in the project folder
+cd myfirstproject
+
+# Open in VS Code
+code .
+```
+
+**What `code .` does:**
+- `code` = Opens VS Code
+- `.` = Current folder
+- **Simple explanation:** "Open VS Code in this folder"
+
+**Method 2: From VS Code Menu**
+1. Open VS Code
+2. Click **File** → **Open Folder**
+3. Navigate to your `myfirstproject` folder
+4. Click **Select Folder**
+
+**Method 3: From File Explorer**
+1. Navigate to your `myfirstproject` folder in Windows Explorer
+2. Right-click the folder
+3. Select **"Open with Code"**
+
+**What you'll see in VS Code:**
+- Left sidebar: File Explorer showing your project files
+- Main area: Code editor (empty for now)
+- Bottom: Status bar showing Python version
+
+**Important: Select Python Interpreter**
+
+1. Look at the bottom-right corner of VS Code
+2. You should see the Python version (like "Python 3.11.0")
+3. Click it
+4. Select your virtual environment's Python:
+   - Look for: `.\myenv\Scripts\python.exe` or `myenv\Scripts\python.exe`
+   - It should show `('.venv': venv)` or `('myenv': venv)`
+
+**If you don't see the option:**
+1. Press `Ctrl+Shift+P`
+2. Type: `Python: Select Interpreter`
+3. Choose your virtual environment's Python
+
+**Verify it's working:**
+- Bottom-right should show: `Python 3.x.x ('myenv': venv)`
+- This means VS Code is using your virtual environment!
+
+### Step 5: Using VS Code Integrated Terminal
+
+**VS Code has a built-in terminal - you don't need to switch windows!**
+
+**Open Terminal in VS Code:**
+
+1. **Using Menu:**
+   - Click **Terminal** → **New Terminal**
+   
+2. **Using Keyboard:**
+   - Press `Ctrl+` ` (backtick key, usually above Tab)
+   - Or press `Ctrl+Shift+` ` 
+
+**What you'll see:**
+- Terminal opens at the bottom of VS Code
+- It automatically opens in your project folder
+- You should see: `(myenv) PS C:\Users\dell\Desktop\Django\myfirstproject>`
+
+**Using the Terminal:**
+- You can run all Django commands here
+- Virtual environment is already activated (if configured correctly)
+- No need to switch between VS Code and Command Prompt!
+
+**Try it:**
+```powershell
+# In VS Code terminal, try:
+python manage.py --version
+```
+
+**You should see:** Django version number
+
+**Benefits of VS Code Terminal:**
+- ✅ See code and terminal side-by-side
+- ✅ Copy/paste easily
+- ✅ Multiple terminals (click `+` to add more)
+- ✅ Terminal history
+- ✅ Auto-activates virtual environment
+
 ---
 
 ## 📁 Part 2: Understanding Project Structure (Line by Line)
@@ -612,9 +702,22 @@ A practice server - not for real users, just for you to test your website.
 
 ### How to Run the Server
 
+**Option 1: Using VS Code Integrated Terminal (Recommended)**
+
+1. **Open Terminal in VS Code:**
+   - Press `Ctrl+` ` (backtick)
+   - Or click **Terminal** → **New Terminal**
+
+2. **Run the server:**
+   ```powershell
+   python manage.py runserver
+   ```
+
+**Option 2: Using External Terminal**
+
 **Step 1: Navigate to your project folder**
 
-```bash
+```powershell
 cd myfirstproject
 ```
 
@@ -624,7 +727,7 @@ You should see `(myenv)` in your terminal.
 
 **Step 3: Run the server**
 
-```bash
+```powershell
 python manage.py runserver
 ```
 
@@ -653,11 +756,21 @@ Quit the server with CTRL-BREAK.
 - `System check identified no issues` = Everything is working!
 - `Starting development server at http://127.0.0.1:8000/` = Your website is running!
 
+**VS Code Tip:**
+- The terminal shows the server is running
+- You can keep VS Code open and work on code
+- Django auto-reloads when you save files!
+
 ### Viewing Your Website
 
 1. **Open your web browser**
 2. **Go to:** `http://127.0.0.1:8000/` or `http://localhost:8000/`
 3. **You should see:** A Django welcome page! 🎉
+
+**VS Code Tip - Open in Browser:**
+- Right-click the URL in terminal: `http://127.0.0.1:8000/`
+- Select "Open Link" (if available)
+- Or press `Ctrl+Click` on the URL
 
 **What is 127.0.0.1?**
 - It's called "localhost"
@@ -671,7 +784,18 @@ Quit the server with CTRL-BREAK.
 
 ### Stopping the Server
 
-Press `CTRL + C` (or `CTRL + BREAK` on Windows)
+**In VS Code Terminal:**
+- Click in the terminal
+- Press `Ctrl+C`
+- Server stops
+
+**In External Terminal:**
+- Press `CTRL + C` (or `CTRL + BREAK` on Windows)
+
+**VS Code Tip:**
+- You can have multiple terminals
+- Keep server running in one terminal
+- Use another terminal for other commands!
 
 ---
 
