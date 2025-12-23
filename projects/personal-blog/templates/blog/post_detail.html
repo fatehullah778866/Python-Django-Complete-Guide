@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}{{ post.title }} | Personal Blog{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>{{ post.title }}</h1>
+    <p class="meta">By {{ post.author }} • {{ post.created_at|date:"M d, Y" }}</p>
+    {% if post.updated_at != post.created_at %}
+        <p class="muted">Updated: {{ post.updated_at|date:"M d, Y" }}</p>
+    {% endif %}
+    <div class="spacer"></div>
+    <p>{{ post.content|linebreaks }}</p>
+    <div class="actions">
+        <a class="btn" href="{% url 'blog:post_list' %}">Back to Posts</a>
+        <a class="btn secondary" href="{% url 'blog:post_update' post.pk %}">Edit</a>
+        <a class="btn danger" href="{% url 'blog:post_delete' post.pk %}">Delete</a>
+    </div>
+{% endblock %}
+

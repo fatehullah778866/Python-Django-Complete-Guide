@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}{{ title }} | Personal Blog{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>{{ title }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {% for field in form %}
+            <div>
+                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                {{ field }}
+                {% if field.errors %}
+                    <ul class="muted">
+                        {% for error in field.errors %}
+                            <li style="color: #dc2626;">{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+        {% endfor %}
+        <div class="actions">
+            <button class="btn" type="submit">Save</button>
+            <a class="btn secondary" href="{% url 'blog:post_list' %}">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
