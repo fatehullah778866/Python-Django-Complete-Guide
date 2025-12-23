@@ -186,11 +186,34 @@ All commands in these guides are written for **Windows PowerShell** or **Command
 ## 🎓 What's Next?
 
 After completing all 11 steps, you'll be ready for:
+- **Practice Projects** - Build 8 real projects to master Django (see [Projects Plan](./PROJECTS-PLAN.md))
 - Intermediate level topics (Authentication, APIs, Advanced Forms)
 - Building more complex projects
 - Advanced Django features
 - Deployment
 - Django REST Framework
+
+## 🚀 Practice Projects
+
+Ready to build real applications? Check out our **[Projects Plan](./PROJECTS-PLAN.md)**!
+
+**8 Projects to Master Django:**
+1. Personal Blog (Basic CRUD)
+2. Todo List Application
+3. Contact Form Website
+4. Book Library Manager
+5. Recipe Sharing Platform
+6. Student Grade Tracker
+7. Event Management System
+8. Product Catalog (E-commerce Basics)
+
+Each project includes:
+- ✅ Detailed step-by-step guide
+- ✅ Complete code examples
+- ✅ What you'll learn
+- ✅ Challenges to extend functionality
+
+**Start building after completing Steps 1-11!**
 
 **Congratulations!** You've completed the basic level and built a complete Django application! 🎉
 
